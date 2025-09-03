@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+:root{
+  --primary-color: #F43F5E;      
+--accent-color: #3B82F6;        
+--bg-color: #FFF1F2;            
+--box-color: #FFFFFF;
+--text-color: #1E293B;          
+--head-color: #111827;
+--icon-color: #9CA3AF;
+--input-color: #F3F4F6;
+--links-color: #3B82F6;
+--new-text: #6B7280;
+--logo-color: #F43F5E;
+--next-logo: #8B5CF6;           
+--nav-color: #FFFFFF;
+--bordr-color: #E5E7EB;
+}
+.dark{
+--primary-color: #7C3AED;     
+--accent-color: #10B981;        
+--bg-color: #0F172A;            
+--box-color: #1E293B;           
+--text-color: #F1F5F9;          
+--head-color: #E2E8F0;
+--icon-color: #94A3B8;
+--input-color: #334155;         
+--links-color: #38BDF8;         
+--new-text: #94A3B8;
+--logo-color: #7C3AED;
+--next-logo: #10B981;
+--nav-color: #1E293B;
+--bordr-color: #334155;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   background:var(--bg-color);
+}
+.login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 440px;
+    height: 480px;
+    padding: 30px;
+}
+.header{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+.header h1{
+    color: var(--logo-color);
+    font-size: 30px;
+    font-weight:900;
+}
+.input-feild {
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+
+    
+}
+::placeholder{
+    font-weight: 500;
+    color:var(--new-text);
+}
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+   
+}
+section{
+display: flex;
+align-items: center;
+font-size: 14px;
+} 
+#check{
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color:var(--text-color);
+}
+a:hover{
+    text-decoration: underline;
+}
+section a{
+    color:var(--links-color);
+}
+.submit{
+    position: relative;
+}
+.nbtn{
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    background:var(--nav-color);
+    border: none;
+    cursor:pointer;
+}
+.submit label a{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color:var(--next-logo);
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+
+}
+.link {
+    text-align: center;
+    padding-top: 10px;
+}
+#btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background:var(--nav-color);
+    width: 45px;
+    border-radius: 15px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+    transition: padding-left 0.5s,background 0.5s;
+   }
+#btn span{
+    width: 18px;
+    height: 18px;
+    background:var(--icon-color);
+    border-radius: 50%;
+    display: inline-block;
+
+   }
+ #btn.on{
+    padding-left: 23px;
+    
+   }
+   .link p{
+    color: var(--new-text);
+   }
+   section label p{
+    color: var(--text-color);
+   }
